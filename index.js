@@ -31,7 +31,7 @@ cloudinary.config({
     });
 
 app.use(cors({
-  origin: 'http://192.168.2.27:5174', 
+  origin: process.env.CLIENT_URL || 'http://localhost:5174',
   credentials: true,               
 }));
 
