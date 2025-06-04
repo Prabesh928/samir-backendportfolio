@@ -58,7 +58,7 @@ exports.login = async (req,res)=>{
         )
        
         res.cookie('token', token, {
-        httpOnly: true, 
+        httpOnly: false, 
         
   sameSite: 'None',     
          maxAge: 60 * 60 * 1000,  
